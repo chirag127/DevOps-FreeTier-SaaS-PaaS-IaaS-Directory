@@ -1,67 +1,39 @@
 # Security Policy
 
+## Reporting Security Vulnerabilities
+
+We take security seriously. If you discover a security vulnerability in this project, please report it to us immediately.
+
+Please do **not** report security vulnerabilities through public issues. Instead, send an email to [your-email@example.com] (replace with a real email address). Please include the following information:
+
+*   Your name and contact information.
+*   A detailed description of the vulnerability.
+*   Steps to reproduce the vulnerability.
+*   Any proof-of-concept code or exploits.
+
+We will acknowledge your report within 72 hours and work to address the vulnerability as quickly as possible. We appreciate your help in making this project more secure.
+
 ## Supported Versions
 
-We are committed to maintaining a secure project. Security vulnerabilities are taken very seriously.
-
-| Version | Supported          |
-| ------- | ------------------ |
-| Latest  | :white_check_mark: |
-
-## Reporting a Vulnerability
-
-We appreciate your efforts to responsibly disclose your findings to us. We are particularly interested in vulnerabilities that affect security and privacy, including but not limited to:
-
-*   Remote Code Execution (RCE)
-*   Authentication Bypass
-*   Authorization Flaws
-*   Data Leakage
-*   Cross-Site Scripting (XSS)
-*   Insecure Direct Object References (IDOR)
-*   SQL Injection
-*   Cross-Site Request Forgery (CSRF)
-*   Server-Side Request Forgery (SSRF)
-*   XML External Entity (XXE) Attacks
-*   Insecure Deserialization
-*   Denial of Service (DoS)
-*   Privilege Escalation
-
-### How to Report
-
-To report a security vulnerability, please use GitHub's **Security Advisory** feature or send an email to `security@example.com` (replace with a real security contact email if applicable) with a detailed description of the vulnerability.
-
-**Do not publicly disclose the vulnerability until it has been addressed.**
-
-We will acknowledge receipt of your vulnerability report within **48 hours** and will provide an update on the status of the fix within **7 days**.
+Use of the latest version of the Awesome List is recommended to have the latest security patches.
 
 ## Security Best Practices
 
-This project adheres to the following security principles:
+This project follows security best practices, including:
 
-*   **Zero Trust:** All inputs are validated and sanitized. Assume no trust in external data.
-*   **Principle of Least Privilege:** Components and users are granted only the permissions necessary to perform their functions.
-*   **Defense in Depth:** Multiple layers of security controls are implemented.
-*   **Secure Defaults:** The most secure configuration is the default.
-*   **Fail Fast:** Errors are detected and reported as early as possible.
-*   **Regular Audits:** Dependencies are regularly scanned for known vulnerabilities.
-*   **Secure Supply Chain:** We aim to generate SBOMs and audit dependencies.
+*   Regularly updating dependencies.
+*   Using secure coding practices.
+*   Protecting sensitive information.
+*   Following the principle of least privilege.
 
-## Incident Response
+## Security Audits
 
-In the event of a security incident, the following steps will be taken:
-
-1.  **Containment:** Isolate the affected systems or components.
-2.  **Investigation:** Determine the root cause and scope of the incident.
-3.  **Eradication:** Remove the threat and address the vulnerability.
-4.  **Recovery:** Restore affected systems and data.
-5.  **Post-Mortem:** Conduct a thorough review to prevent future incidents.
+This project may undergo security audits. The results of these audits will be made available to the public. The current status is: Not applicable.
 
 ## Vulnerability Disclosure Policy
 
-We encourage responsible disclosure. We will not pursue legal action against researchers who discover and report security vulnerabilities in accordance with this policy.
+We will publicly disclose any security vulnerabilities that are found and fixed in a timely manner. We will also provide a detailed explanation of the vulnerability and the steps taken to fix it.
 
-*   We ask that you give us reasonable time to fix the vulnerability before disclosing it publicly.
-*   Do not exploit the vulnerability in any way that could impact users or data.
-*   Do not engage in activities such as denial of service or social engineering.
+## Contact
 
-We are committed to working with security researchers to improve the security of our project. Thank you for your contribution.
+For any security-related questions, please contact us at [your-email@example.com].
