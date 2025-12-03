@@ -1,55 +1,51 @@
----
-name: "🐛 Data Integrity Report (Bug)"
-about: Report a factual error, broken link, retired service, or outdated detail in the Awesome List.
-title: "[BUG] Detailed description of the outdated entry"
-labels: ['type:bug', 'status:triage', 'area:data-integrity']
-assignees: []
----
+# 🐛 Bug Report
 
-## 🛑 Apex Quality Control: Data Integrity Report
-
-Thank you for helping maintain the accuracy and value of the `CloudCostControl-Global-FreeTier-SaaS-PaaS-IaaS-Awesome-List`. Use this template to report factual errors, broken links, or misleading service details. High-quality data integrity is crucial for cost optimization.
+Thank you for taking the time to report an issue. Following these guidelines ensures rapid diagnosis and resolution by the Apex Team.
 
 ---
 
-### 1. Location of the Issue
+## 1. Context & Environment (Mandatory)
 
-Please provide the exact location of the error within the list. Triage is significantly faster with precise coordinates.
+*What is the expected behavior versus the actual observed behavior?*
 
-- [ ] I have verified the issue persists in the `main` branch.
-- **Section/Category:** (e.g., AWS Free Tier, Database Services, Monitoring, Serverless Compute)
-- **Specific Service Name:** (e.g., MongoDB Atlas, Cloudflare Workers, Redis Cloud)
-- **Direct Link/Anchor Tag (if applicable):** [Paste the URL or line number/anchor tag reference here]
+**Observed Behavior:**
+<!-- Describe exactly what happens that is incorrect. -->
 
-### 2. Detailed Description of the Failure
+**Expected Behavior:**
+<!-- Describe what *should* happen based on the repository's function (Cost Optimization / Awesome List Curation). -->
 
-Provide a clear and concise description of what the current list entry says, and what the correct status should be.
+**Repository Version/State:**
+<!-- If referencing a specific section/link/file: -->
 
-**A. Current Status (The Bug):**
-*Example: The list states that Service X offers 5GB free storage, but their current public documentation now says 1GB.*
+**Affected Resource/Link:**
+<!-- Paste the specific link or service entry causing the issue (e.g., https://github.com/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List#aws-s3-free-tier) -->
 
-**B. Expected/Corrected Status (The Fix):**
-*Example: Service X free tier has been reduced to 1GB storage, or the original link provided is resulting in a 404 error.*
+## 2. System Context
 
-### 3. Proof and Verification
+Since this is an HTML/List-based repository, system context is less critical, but provide details if you suspect a browser rendering or tool interaction issue.
 
-The Apex standard requires verifiable evidence for all data updates. Please link directly to the official documentation, pricing page, or announcement that verifies the error.
+**Browser/Tool Used (if applicable):**
+<!-- e.g., Chrome 120, VS Code, GitHub Mobile -->
 
-- **Verification URL:** [Paste link to official documentation confirming the change]
-- **Date Verified:** (YYYY-MM-DD)
+**Operating System:**
+<!-- e.g., macOS Sonoma, Windows 11 -->
 
-### 4. Impact Assessment
+## 3. Steps to Reproduce
 
-How significant is this inaccuracy? This helps prioritize the fix for users dependent on cost-critical data.
+Provide clear, numbered steps that allow anyone to reliably reproduce the error.
 
-- [ ] High (Service is completely retired/link is 404/major price change rendering the service non-free)
-- [ ] Medium (Minor tier adjustment/outdated documentation link or non-critical feature change)
-- [ ] Low (Typo/Stylistic issue that doesn't affect cost or accessibility)
+1. 
+2. 
+3. 
 
-### 5. Environment (If applicable)
+## 4. Proposed Fix (Optional)
 
-If the issue relates to viewing or accessing the list (e.g., formatting errors):
+If you have an idea of the required correction (e.g., updating a URL, adding a missing tag, correcting a markdown syntax error), please include it here. 
 
-- **Browser & Version:** (e.g., Chrome 120, Firefox 118)
-- **Operating System:** (e.g., macOS Sonoma, Windows 11)
-- **Device Type:** (Desktop, Mobile)
+## 5. Diagnostic Attachments
+
+<!-- Attach screenshots or console output (if applicable to visualization issues) -->
+
+---
+
+*This repository adheres to the **CC BY-NC 4.0 License**. By submitting an issue, you agree to contribute under these terms.*
