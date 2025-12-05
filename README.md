@@ -1,125 +1,129 @@
-# CloudCostControl-FreeTier-Cloud-Services-Awesome-List
+# CloudCostControl-FreeTier-Resource-List
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List/ci.yml?style=flat-square)](https://github.com/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List/actions/workflows/ci.yml)
-[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List?style=flat-square)](https://codecov.io/gh/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List)
-[![License](https://img.shields.io/github/license/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List?style=flat-square)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List?style=flat-square)](https://github.com/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/CloudCostControl-FreeTier-Resource-List/ci.yml?label=Build&style=flat-square)](https://github.com/chirag127/CloudCostControl-FreeTier-Resource-List/actions/workflows/ci.yml)
+[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/CloudCostControl-FreeTier-Resource-List?label=Coverage&style=flat-square)](https://codecov.io/gh/chirag127/CloudCostControl-FreeTier-Resource-List)
+[![License](https://img.shields.io/github/license/chirag127/CloudCostControl-FreeTier-Resource-List?style=flat-square)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/chirag127/CloudCostControl-FreeTier-Resource-List?style=flat-square)](https://github.com/chirag127/CloudCostControl-FreeTier-Resource-List)
+
+> This repository provides a definitive, community-curated Awesome List cataloging global free-tier offerings across major SaaS, PaaS, and IaaS providers. Essential intelligence for DevOps, SREs, and Cloud Architects dedicated to maximizing infrastructure utility while minimizing operational expenditure.
 
 <p align="center">
-  <a href="https://stars.github.com/ML/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List" target="_blank"><img src="https://img.shields.io/badge/Star%20%E2%98%85%EF%B8%8F%20this%20Repo-blue?style=social&logo=github" alt="Star this Repo"></a>
+  <a href="https://saythanks.dev/to/chirag127" target="_blank">
+    <img src="https://img.shields.io/badge/Star%20%E2%AD%90%20this%20Repo-FFD700?style=flat-square&logo=star" alt="Star this Repo">
+  </a>
 </p>
 
 ---
 
-This repository aggregates and curates a comprehensive, community-driven list of Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), and Infrastructure-as-a-Service (IaaS) offerings that provide generous, perpetually usable free tiers.
+## 🌟 Table of Contents
 
-Our mission is to empower DevOps practitioners, Site Reliability Engineers (SREs), and Cloud Architects to build proof-of-concepts, small-scale applications, and personal projects while aggressively optimizing cloud expenditure.
+1. [Overview](#overview)
+2. [Architecture & Structure](#architecture--structure)
+3. [Tech Stack & Principles](#tech-stack--principles)
+4. [Development & Contribution](#development--contribution)
+5. [🤖 AI Agent Directives](#ai-agent-directives)
 
-## 🏛️ Architecture Overview
+---
 
-This project, being an "Awesome List," relies on structured markdown for presentation and community contribution via established GitHub workflows.
+## 1. Overview
+
+`CloudCostControl-FreeTier-Resource-List` serves as the canonical, human-verified index for cloud resource commitments that cost $0 for a baseline usage period or volume. It is organized by Cloud Vendor (AWS, Azure, GCP, Others) and Service Category (Compute, Storage, Database, Networking).
+
+This resource is critical for bootstrapping new projects, maintaining personal development environments, and ensuring enterprise architects adhere to **FinOps** best practices by leveraging committed free tiers before scaling to paid capacity.
+
+## 2. Architecture & Structure
+
+As a curated Awesome List, the primary architecture focuses on discoverability, clear Markdown formatting, and static deployment efficiency. The HTML structure is optimized for rapid loading and searchability.
 
 text
-CloudCostControl-FreeTier-Cloud-Services-Awesome-List/
-├── README.md             (Primary Documentation)
-├── BADGES.md             (Badge Configuration Reference)
-├── LICENSE               (CC BY-NC 4.0)
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   └── workflows/
-│       └── ci.yml        (Build & Lint Validation)
-└── *.md                  (Category Files: saas.md, paas.md, iaas.md)
+CloudCostControl-FreeTier-Resource-List/
+├── providers/
+│   ├── aws.md
+│   ├── azure.md
+│   ├── gcp.md
+│   └── others.md
+├── LICENSE
+├── README.md  (This File - Master Index)
+└── .github/
+    └── ... (Standard Compliance Files)
 
 
-## 📋 Table of Contents
+## 3. Tech Stack & Principles
 
-1. [Features & Scope](#-features--scope)
-2. [Technology Stack & Standards](#-technology-stack--standards)
-3. [Contributing Guidelines](#-contributing-guidelines)
-4. [License](#-license)
-5. [🤖 AI Agent Directives](#-ai-agent-directives)
+**Primary Language:** HTML (for deployment flexibility)
+**Core Focus:** Information Architecture & Curation
 
----
+| Domain | Technology/Principle | Standard | Rationale |
+| :--- | :--- | :--- | :--- |
+| **Curation** | Resource Validation | **DRY** | Ensure no duplicate entries; cross-reference vendor documentation. |
+| **Structure** | Content Organization | **SOLID (Single Responsibility)** | Each provider gets a dedicated file to manage complexity. |
+| **Maintenance** | Version Control | **YAGNI** | Maintain only necessary files; prioritize list accuracy over tool complexity. |
+| **DevOps** | CI/CD | GitHub Actions | Automated basic checks upon pull requests. |
 
-## ✨ Features & Scope
+## 4. Development & Contribution
 
-*   **Comprehensive Indexing:** Categorized listing across SaaS, PaaS, and IaaS providers.
-*   **Perpetual Free Tier Focus:** Excludes time-limited trials; prioritizes always-free allowances.
-*   **Community Driven:** Utilizes robust GitHub Issues and Pull Request templates for high-integrity submissions.
-*   **Automated Validation:** CI pipeline (`ci.yml`) ensures basic Markdown formatting and link integrity on every submission.
+We welcome contributions to enhance accuracy, add new vendors, or correct expiration dates. Please adhere to the contribution guidelines.
 
-## 🛠️ Technology Stack & Standards
+### Setup
 
-While the artifact itself is Markdown, adherence to professional development standards is paramount for maintaining list integrity.
+Since this is primarily a Markdown/HTML curation effort, setup is minimal:
 
-| Component | Standard / Tool | Rationale |
+bash
+git clone https://github.com/chirag127/CloudCostControl-FreeTier-Resource-List.git
+cd CloudCostControl-FreeTier-Resource-List
+# No package management required for base list; direct link verification is manual or via custom scripts.
+
+
+### Quick Scripts
+
+| Script | Command | Description |
 | :--- | :--- | :--- |
-| **Data Format** | Markdown (GitHub Flavored) | Universal accessibility and ease of contribution. |
-| **License** | CC BY-NC 4.0 | Allows non-commercial use and modification with attribution. |
-| **Metadata/CI** | GitHub Actions / Shields.io | Standardized platform for automation and visual status reporting. |
-| **Contribution** | Semantic Versioning (Implied) | Changes to service tiers are treated as minor version bumps to the list structure. |
+| **Validate Links** | `bash ./scripts/validate_links.sh` | (Hypothetical Python/Ruff script for validation) |
+| **Format List** | `npm run format` | (Hypothetical Biome/Prettier command for Markdown consistency) |
 
-## 🤝 Contributing Guidelines
+For official standards, see the dedicated contribution file:
+[CONTRIBUTING.md](./.github/CONTRIBUTING.md)
 
-We welcome contributions from the community to keep this list current and accurate. Please adhere to the following:
+## 5. 🤖 AI Agent Directives
 
-1.  Read **`.github/CONTRIBUTING.md`** for detailed steps.
-2.  Submit new services via a Pull Request against the appropriate category file (`saas.md`, `paas.md`, or `iaas.md`).
-3.  If you find an expired or inaccurate entry, please open a **Bug Report** via the Issue Tracker.
-4.  All submissions are subject to CI validation.
+<details><summary><strong>View Apex Technical Authority Directives (December 2025)</strong></summary>
 
-## 📄 License
+### System: APEX TECHNICAL AUTHORITY & ELITE ARCHITECT (DECEMBER 2025 EDITION)
 
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**. See the [LICENSE](LICENSE) file for details.
+#### 1. IDENTITY & PRIME DIRECTIVE
+**Role:** You are a Senior Principal Software Architect and Master Technical Copywriter with **40+ years of elite industry experience**. You operate with absolute precision, enforcing FAANG-level standards and the wisdom of "Managing the Unmanageable."
+**Context:** Current Date is **December 2025**. You are building for the 2026 standard.
+**Output Standard:** Deliver **EXECUTION-ONLY** results. No plans, no "reporting"—only executed code, updated docs, and applied fixes.
+**Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
 
----
+#### 2. INPUT PROCESSING & COGNITION
+*   **SPEECH-TO-TEXT INTERPRETATION PROTOCOL:**
+    *   **Context:** User inputs may contain phonetic errors (homophones, typos).
+    *   **Semantic Correction:** **STRICTLY FORBIDDEN** from executing literal typos. You must **INFER** technical intent based on the project context.
+    *   **Logic Anchor:** Treat the `README.md` as the **Single Source of Truth (SSOT)**.
+*   **MANDATORY MCP INSTRUMENTATION:**
+    *   **No Guessing:** Do not hallucinate APIs. Use `linkup`/`brave` to search for **December 2025 Industry Standards**, **Security Threats**, and **2026 UI Trends**.
+    *   **Validation:** Use `docfork` to verify *every* external API signature.
+    *   **Reasoning:** Engage `clear-thought-two` to architect complex flows *before* writing code.
 
-<details>
-<summary>🤖 AI Agent Directives (Apex Protocol)</summary>
+#### 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
+**Directives:** This repository (`CloudCostControl-FreeTier-Resource-List`) is a **Curation/List** project, primarily using declarative formats (Markdown/HTML) for content delivery. If external tooling were required for validation, the Apex standard is:
 
-# AGENTS.md Directives (December 2025 Implementation)
+*   **PRIMARY SCENARIO: DATA / CURATION (List/Markup)**
+    *   **Stack:** Primary interaction is with Markdown syntax and link integrity checks. For validation tooling (if implemented), **Python 3.10+** with **uv** (management), **Ruff** (linting), and **Pytest** would be the standard backend for processing the list content for structural integrity.
+    *   **Architecture:** Purely declarative, emphasizing **Immutability** for the curated content itself.
 
-## 1. IDENTITY & PRIME DIRECTIVE (Echo)
-**Role:** You are a Senior Principal Software Architect, tasked with maintaining the integrity and discoverability of this Cloud Cost Optimization resource.
-**Directive:** Ensure all metadata (Description, Topics, README) remains high-fidelity, reflecting the cutting-edge value proposition of perpetually free cloud services in the 2026 landscape. Never allow this list to decay into stale information.
+#### 4. DEVELOPMENT STANDARDS & VERIFICATION
+*   **LINT/FORMAT:** If processing scripts exist (e.g., validation shell scripts), they must be compliant with standard UNIX best practices. Markdown/HTML formatting follows industry-standard conventions.
+*   **VERIFICATION COMMANDS (Conceptual for List Integrity):
+bash
+# Verify all external links in providers/*.md files (requires external link checker utility)
+./scripts/verify_links.sh
 
-## 2. CONTEXT-AWARE APEX TOOLCHAIN (Markdown/List Maintenance)
-Since this repository is an **Awesome List** artifact (Markdown/HTML based), the primary toolchain is focused on **validation, integrity, and documentation rendering**.
+# Ensure README structure compliance
+git grep -q "<details><summary>View Apex Technical Authority Directives" README.md
 
-*   **LINTING/FORMATTING:** Primary validation is enforced via **GitHub Actions (`ci.yml`)** using standard Markdown link checkers and basic structure checks. Advanced validation requires **external link-checking utilities** executed within the CI environment (e.g., `lychee` or similar modern URL validator).
-*   **ARCHITECTURE:** The structure follows a **Categorical Organization Pattern**, ensuring high signal-to-noise ratio for users scanning IaaS, PaaS, and SaaS sections.
-*   **DATA SOURCE INTEGRITY:** Priority one is verifying that *every* listed free tier is **PERPETUAL**, not trial-based. Manual verification of provider documentation takes precedence over automated checks where ambiguity exists.
 
-## 3. VERIFICATION COMMANDS (CI/CD Alignment)
-
-To simulate local verification matching the CI pipeline:
-
-1.  **Clone and Setup (Simulated):**
-    bash
-    git clone https://github.com/chirag127/CloudCostControl-FreeTier-Cloud-Services-Awesome-List.git
-    cd CloudCostControl-FreeTier-Cloud-Services-Awesome-List
-    # No installation needed; relies on local markdown parsing/linters if available.
-    
-2.  **Run Local Link Check (Conceptual):**
-    *(Note: Actual execution requires external tools not guaranteed in all runners, but this is the intent of the CI setup.)*
-    bash
-    # Hypothetical command for link validation enforced by ci.yml
-    markdown-link-checker --files "*.md" --ignore-timeouts
-    
-3.  **Architecture Review Check:** Confirm that all new entries clearly delineate resource limits (e.g., "5GB Storage/Month" vs. "Unlimited").
-
-## 4. FUTURE DEVELOPMENT DIRECTIVE
-If this repository transitions to a dynamic web interface, the **Apex Stack** (TypeScript, Vite, Tauri) must be considered. For now, maintain Markdown purity and strict CI checks.
+**Architectural Guidance:** Maintain strict separation between the content structure (the list items) and the presentation layer (the README's boilerplate).
 
 </details>
-
----
-
-## 🔗 Repository Metadata
-
-| Field | Value |
-| :--- | :--- |
-| **Username** | `chirag127` |
-| **Repository Name** | `CloudCostControl-FreeTier-Cloud-Services-Awesome-List` |
-| **Primary Language** | HTML/Markdown |
-| **License** | CC BY-NC 4.0 |
